@@ -4,17 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TokenAllocationRequest {
+public class EmergencyAllocationRequest {
     private String patientName;
     private String patientPhone;
     private Long doctorId;
-    private LocalDate preferredDate;
-    private String preferredTime;  // "09:00"
-    private String tokenType;      // "online", "walkin", etc.
+    private String date;  // "2026-01-28"
 }
 
